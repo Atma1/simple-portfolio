@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  --light-sky-blue: rgb(0, 204, 255);
+  --white: white;
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--white);
+}
+
+nav {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--light-sky-blue);
+}
+
+#root {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-image {
+  height: 200px;
+  width: 360px;
+  object-fit: fill;
+  border: solid 2px var(--white);
+}
+
+#projects {
+  text-align: center;
+  align-items: center;
+  padding: 2em 2em;
+  background: rgb(0, 191, 255);
+}
+
+#projects h2.title {
+  color: var(--white);
+  border-bottom: solid 2px var(--white);
+  padding: .3em;
+}
+
+.project-tile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-style: oblique;
+}
+
+.project-title {
+  margin-top: .5em;
+  color: var(--white);
+}
+
+.project-title:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+#projects-grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 400px);
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: var(--white);
+  color: black;
+}
+
+#welcome-section img {
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 50%;
+  border: 2px solid var(--light-sky-blue);
+  margin: 0 auto;
+}
+
+#about-me h1 {
+  font-size: 2em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#about-me p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#contact-me-section {
+  margin-top: 1.3em;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 4em;
+}
+
+#navbar a {
+  color: var(--white);
+  padding: 1.2em;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  border-bottom: 2px whitesmoke solid;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#profile-link {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#contact-me-section {
+  background-color: var(--white);
+}
+
+#contact-me-section a {
+  padding: .4em
+}
+
+#contact-me-section a:hover {
+  border-bottom: 2px var(--light-sky-blue) solid;
+}
+
+#contact-me-section h1 {
+  padding: .3em;
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+#contact-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: .2em;
+  margin-top: 5em;
+  max-width: 600px;
+}
+
+#footer-section {
+  background: var(--light-sky-blue);
+  height: 5vh;
+}
+
+@media (max-width: 815px) {
+  nav {
+      min-height: 70px;
+  }
+  #navbar ul {
+      margin-right: 2em;
+  }
+  #navbar a {
+      font-size: .95em;
+  }
+  #contact-link-container {
+      margin-top: 2em;
+  }
+  #welcome-section img {
+      max-width: 50%;
+      max-height: 50%;
+  }
+  #contact-me-section h1 {
+      font-size: 1.1em;
+  }
+  #contact-me-section a{
+      font-size: 1.6em;
+  }
+}
