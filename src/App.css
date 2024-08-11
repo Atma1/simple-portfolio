@@ -4,6 +4,7 @@
   margin: 0;
   font-family: sans-serif;
   --light-sky-blue: rgb(0, 204, 255);
+  --dark-sky-blue: rgb(92, 166, 184);
   --white: white;
   scroll-behavior: smooth;
 }
@@ -20,25 +21,13 @@ body {
 
 nav {
   width: 100%;
-  min-height: 64px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  border-radius: 10px;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: var(--light-sky-blue);
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
 }
 
-#atma-logo {
-  height: 32px;
-  width: 100px;
-  align-self: center;
-  position: fixed;
-  left: 0;
-  margin-left: 10px;
-}
 
 #root {
   width: 100%;
@@ -140,7 +129,6 @@ nav {
   max-width: 50%;
   max-height: 50%;
   border-radius: 50%;
-  border: 2px solid var(--light-sky-blue);
   margin: 0 auto;
 }
 
@@ -152,6 +140,7 @@ nav {
 #about-me p {
   margin-top: 10px;
   font-style: italic;
+  font-size: 1.3em;
 }
 
 #arrow-down-icon {
@@ -161,6 +150,10 @@ nav {
 .fa-arrow-circle-down {
   color: var(--light-sky-blue);
   font-size: 3em;
+}
+
+.fa-arrow-circle-down:hover {
+  color: var(--dark-sky-blue)
 }
 
 #contact-me-section {
@@ -175,12 +168,13 @@ nav {
 
 #navbar ul {
   display: flex;
-  margin-right: 4em;
+  background: var(--light-sky-blue);
+  border-radius: 5px;
 }
 
 #navbar a {
   color: var(--white);
-  padding: 1.2em;
+  padding: 1.1em;
   font-weight: bold;
 }
 
