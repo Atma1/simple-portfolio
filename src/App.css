@@ -121,8 +121,8 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  background-color: var(--white);
-  color: black;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,57,215,1) 0%, rgba(25,145,238,1) 0%, rgba(30,130,234,1) 22%, rgba(0,212,255,1) 66%); 
 }
 
 #welcome-section img {
@@ -134,13 +134,15 @@ nav {
 
 #about-me h1 {
   line-height: 1.5em;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--white);
 }
 
 #about-me p {
   margin-top: 10px;
   font-style: italic;
   font-size: 1.3em;
+  color: var(--white);
 }
 
 #arrow-down-icon {
@@ -170,6 +172,7 @@ nav {
   display: flex;
   background: var(--light-sky-blue);
   border-radius: 5px;
+  min-height: 62px;
 }
 
 #navbar a {
