@@ -1,7 +1,9 @@
+import atmaImage from '../assets/me.jpeg'
+
 export default function Welcome() {
     return (
     <section id="welcome-section">
-        <img src="https://avatars.githubusercontent.com/u/78201403?v=4" alt="Atma profile picture" />
+        <img src={atmaImage} alt="Atma profile picture" />
         <div id="about-me">
             <h1>Greetings!</h1>
             <h1>I am Adyatma Imam Susanto</h1>
