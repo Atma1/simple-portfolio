@@ -61,7 +61,7 @@ export default function Projects() {
                         <img className="project-image" src={legoFigureImage} alt="Zoo Visitor Monitoring System" />
                         <h2 className="project-title">Lego Figure Classification</h2>
                         <div className="project-explanation-container">
-                            <p className='project-desc'>Lego figure classification capable of classifying 10 unique lego figure using fine-tuned Resnet16 model. Implemented pipe line from data transformation to model deployment. Deployed using Flask for inference API.</p>
+                            <p className='project-desc'>Lego figure classification model capable of classifying 10 unique lego figure using fine-tuned ResNet-16 model. Implemented pipe line from data transformation to model deployment. Deployed using Flask for inference API.</p>
                             <li className='project-tech-stack'>
                                 <ul>Fast.ai</ul>
                                 <ul>ZenML</ul>
