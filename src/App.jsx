@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Welcome from './components/Welcome'
 import Projects from './components/Projects'
+import Achievements from './components/Achievements'
 
 export default function App() {
 
@@ -12,6 +13,7 @@ export default function App() {
       <Navbar />
       <Welcome />
       <Projects />
+      <Achievements />
       <Contact />
       <Footer />
     </>
